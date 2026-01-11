@@ -1,0 +1,10 @@
+{
+  "id": "opencode-sidebar",
+  "name": "OpenCode Sidebar",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Run OpenCode in your sidebar.",
+  "author": "Derek Ross",
+  "authorUrl": "https://github.com/derekross",
+  "isDesktopOnly": true
+}

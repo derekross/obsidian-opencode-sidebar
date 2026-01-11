@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (main.js is intentionally tracked for Obsidian plugin installation)
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OpenCode
+.opencode/
+OPENCODE.md

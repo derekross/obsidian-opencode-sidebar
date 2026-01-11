@@ -1,0 +1,42 @@
+/* OpenCode Terminal Styles */
+
+.vault-terminal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: var(--background-secondary);
+}
+
+.vault-terminal-host {
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Fix xterm viewport scrolling */
+.vault-terminal .xterm-viewport {
+    overflow-y: auto !important;
+}
+
+.vault-terminal .xterm-screen {
+    height: 100%;
+}
+
+/* Hide the helper textarea that xterm uses - prevent scroll issues */
+.vault-terminal .xterm-helper-textarea {
+    position: absolute !important;
+    top: 0 !important;
+    left: -9999px !important;
+    width: 1px !important;
+    height: 1px !important;
+    z-index: -1000 !important;
+    opacity: 0 !important;
+}
+
+/* Ensure terminal fills container */
+.vault-terminal .xterm {
+    height: 100%;
+}

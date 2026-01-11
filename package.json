@@ -1,0 +1,29 @@
+{
+  "name": "obsidian-opencode-sidebar",
+  "version": "1.0.0",
+  "description": "Run OpenCode in your Obsidian sidebar",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production && ./build.sh"
+  },
+  "keywords": [
+    "obsidian",
+    "opencode",
+    "terminal",
+    "ai",
+    "coding"
+  ],
+  "author": "Derek Ross",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.19.0",
+    "obsidian": "latest",
+    "tslib": "^2.6.0",
+    "typescript": "^5.3.0",
+    "@xterm/xterm": "^5.5.0",
+    "@xterm/addon-fit": "^0.10.0"
+  }
+}
