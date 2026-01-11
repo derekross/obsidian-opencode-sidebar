@@ -15,10 +15,13 @@ Run [OpenCode](https://opencode.ai) directly in your Obsidian sidebar.
 
 ### Quick Install
 
-Run this command from your vault's root directory:
+Run these commands from your vault's root directory:
 
 ```bash
-mkdir -p .obsidian/plugins/opencode-sidebar && curl -sL https://github.com/derekross/obsidian-opencode-sidebar/raw/main/{main.js,manifest.json,styles.css} -o ".obsidian/plugins/opencode-sidebar/#1"
+mkdir -p .obsidian/plugins/opencode-sidebar
+curl -sL https://raw.githubusercontent.com/derekross/obsidian-opencode-sidebar/refs/heads/main/main.js -o .obsidian/plugins/opencode-sidebar/main.js
+curl -sL https://raw.githubusercontent.com/derekross/obsidian-opencode-sidebar/refs/heads/main/manifest.json -o .obsidian/plugins/opencode-sidebar/manifest.json
+curl -sL https://raw.githubusercontent.com/derekross/obsidian-opencode-sidebar/refs/heads/main/styles.css -o .obsidian/plugins/opencode-sidebar/styles.css
 ```
 
 Then enable the plugin in Obsidian Settings > Community Plugins.
