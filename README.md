@@ -2,6 +2,8 @@
 
 Run [OpenCode](https://opencode.ai) directly in your Obsidian sidebar.
 
+![OpenCode running in Obsidian sidebar](screenshot-sidebar.png)
+
 ## Requirements
 
 - Obsidian (desktop only)
@@ -41,7 +43,7 @@ Then copy `main.js`, `manifest.json`, and `styles.css` to your vault's `.obsidia
 
 ## Usage
 
-- Click the terminal icon in the left ribbon to open a new OpenCode tab
+- Click the OpenCode icon in the left ribbon to open a new OpenCode tab
 - Use the command palette (Ctrl/Cmd+P) and search for "OpenCode" to:
   - **Open OpenCode** - Opens or focuses an existing OpenCode panel
   - **New OpenCode Tab** - Creates a new OpenCode instance
@@ -69,6 +71,10 @@ npm run dev
 # Production build
 npm run build
 ```
+
+## Screenshots
+
+![OpenCode Sidebar plugin in Obsidian settings](screenshot-plugin.png)
 
 ## Author
 
