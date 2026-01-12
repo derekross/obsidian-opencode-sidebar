@@ -9,17 +9,9 @@ import * as os from 'os';
 const VIEW_TYPE = 'opencode-terminal';
 const ICON_NAME = 'opencode';
 
-// Custom OpenCode icon - angle brackets with sparkle
-const OPENCODE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Left angle bracket -->
-  <polyline points="35,25 15,50 35,75"/>
-  <!-- Right angle bracket -->
-  <polyline points="65,25 85,50 65,75"/>
-  <!-- Sparkle/star in center -->
-  <line x1="50" y1="35" x2="50" y2="65"/>
-  <line x1="35" y1="50" x2="65" y2="50"/>
-  <line x1="40" y1="40" x2="60" y2="60"/>
-  <line x1="60" y1="40" x2="40" y2="60"/>
+// Custom OpenCode icon - based on official favicon
+const OPENCODE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M384 416H128V96H384V416ZM320 160H192V352H320V160Z"/>
 </svg>`;
 
 // These will be replaced by the build script with base64-encoded Python scripts
