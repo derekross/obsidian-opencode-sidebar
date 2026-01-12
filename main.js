@@ -6803,7 +6803,7 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
     return VIEW_TYPE;
   }
   getDisplayText() {
-    return "OpenCode";
+    return "Opencode";
   }
   getIcon() {
     return ICON_NAME;
@@ -7062,26 +7062,26 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
   onload() {
     (0, import_obsidian.addIcon)(ICON_NAME, OPENCODE_ICON);
     this.registerView(VIEW_TYPE, (leaf) => new OpenCodeTerminalView(leaf, this));
-    this.addRibbonIcon(ICON_NAME, "New OpenCode tab", () => {
+    this.addRibbonIcon(ICON_NAME, "New opencode tab", () => {
       void this.openNewTab();
     });
     this.addCommand({
       id: "open-opencode",
-      name: "Open OpenCode",
+      name: "Open opencode",
       callback: () => {
         void this.openOrFocus();
       }
     });
     this.addCommand({
       id: "new-opencode-tab",
-      name: "New OpenCode tab",
+      name: "New opencode tab",
       callback: () => {
         void this.openNewTab();
       }
     });
     this.addCommand({
       id: "close-opencode-tab",
-      name: "Close OpenCode tab",
+      name: "Close opencode tab",
       checkCallback: (checking) => {
         const view = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
         if (view) {
@@ -7095,7 +7095,7 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "toggle-focus-editor-opencode",
-      name: "Toggle focus: Editor <-> OpenCode",
+      name: "Toggle focus: editor <-> opencode",
       callback: () => {
         void this.toggleFocus();
       }
@@ -7106,7 +7106,7 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
   async openOrFocus() {
     const existing = this.app.workspace.getLeavesOfType(VIEW_TYPE);
     if (existing.length > 0) {
-      this.app.workspace.revealLeaf(existing[0]);
+      await this.app.workspace.revealLeaf(existing[0]);
       const view = existing[0].view;
       view.focus();
     } else {
@@ -7120,7 +7120,7 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
         type: VIEW_TYPE,
         active: true
       });
-      this.app.workspace.revealLeaf(leaf);
+      await this.app.workspace.revealLeaf(leaf);
       const view = leaf.view;
       view.focus();
     }

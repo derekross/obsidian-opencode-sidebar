@@ -1,7 +1,7 @@
 {
   "id": "opencode-sidebar",
   "name": "opencode-sidebar",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minAppVersion": "1.0.0",
   "description": "Add an OpenCode CLI sidebar for AI assisted management and coding.",
   "author": "Derek Ross",

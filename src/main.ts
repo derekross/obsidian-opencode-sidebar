@@ -38,7 +38,7 @@ class OpenCodeTerminalView extends ItemView {
     }
 
     getDisplayText(): string {
-        return 'OpenCode';
+        return 'Opencode';
     }
 
     getIcon(): string {
@@ -343,14 +343,14 @@ export default class OpenCodePlugin extends Plugin {
         this.registerView(VIEW_TYPE, (leaf) => new OpenCodeTerminalView(leaf, this));
 
         // Add ribbon icon
-        this.addRibbonIcon(ICON_NAME, 'New OpenCode tab', () => {
+        this.addRibbonIcon(ICON_NAME, 'New opencode tab', () => {
             void this.openNewTab();
         });
 
         // Register commands
         this.addCommand({
             id: 'open-opencode',
-            name: 'Open OpenCode',
+            name: 'Open opencode',
             callback: () => {
                 void this.openOrFocus();
             }
@@ -358,7 +358,7 @@ export default class OpenCodePlugin extends Plugin {
 
         this.addCommand({
             id: 'new-opencode-tab',
-            name: 'New OpenCode tab',
+            name: 'New opencode tab',
             callback: () => {
                 void this.openNewTab();
             }
@@ -366,7 +366,7 @@ export default class OpenCodePlugin extends Plugin {
 
         this.addCommand({
             id: 'close-opencode-tab',
-            name: 'Close OpenCode tab',
+            name: 'Close opencode tab',
             checkCallback: (checking: boolean) => {
                 const view = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
                 if (view) {
@@ -381,7 +381,7 @@ export default class OpenCodePlugin extends Plugin {
 
         this.addCommand({
             id: 'toggle-focus-editor-opencode',
-            name: 'Toggle focus: Editor <-> OpenCode',
+            name: 'Toggle focus: editor <-> opencode',
             callback: () => {
                 void this.toggleFocus();
             }
@@ -397,7 +397,7 @@ export default class OpenCodePlugin extends Plugin {
         
         if (existing.length > 0) {
             // Focus existing
-            this.app.workspace.revealLeaf(existing[0]);
+            await this.app.workspace.revealLeaf(existing[0]);
             const view = existing[0].view as OpenCodeTerminalView;
             view.focus();
         } else {
@@ -413,7 +413,7 @@ export default class OpenCodePlugin extends Plugin {
                 type: VIEW_TYPE,
                 active: true
             });
-            this.app.workspace.revealLeaf(leaf);
+            await this.app.workspace.revealLeaf(leaf);
             const view = leaf.view as OpenCodeTerminalView;
             view.focus();
         }
