@@ -139,6 +139,7 @@ def main():
                 os.kill(pid, signal.SIGTERM)
             except:
                 pass
+            sys.exit(0)
 
 
 if __name__ == '__main__':

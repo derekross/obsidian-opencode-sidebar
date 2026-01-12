@@ -138,13 +138,14 @@ def main():
     if len(sys.argv) < 4:
         sys.stderr.write("Usage: terminal_win.py <cols> <rows> <command> [args...]\n")
         sys.exit(1)
-    
+
     cols = int(sys.argv[1])
     rows = int(sys.argv[2])
     cmd = sys.argv[3:]
-    
+
     pty = WindowsPTY(cols, rows, cmd)
     pty.start()
+    sys.exit(0)
 
 
 if __name__ == '__main__':
