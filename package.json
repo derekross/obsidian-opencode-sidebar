@@ -1,6 +1,6 @@
 {
   "name": "opencode-sidebar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Add an OpenCode CLI sidebar for AI assisted management and coding.",
   "main": "main.js",
   "scripts": {
