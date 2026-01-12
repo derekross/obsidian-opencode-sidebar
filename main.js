@@ -6787,225 +6787,6 @@ var OPENCODE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 51
 </svg>`;
 var PTY_SCRIPT_B64 = "IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiIKVW5peCBQVFkgd3JhcHBlciBmb3IgT3BlbkNvZGUgdGVybWluYWwuCkhhbmRsZXMgcHNldWRvLXRlcm1pbmFsIGNyZWF0aW9uIGFuZCByZXNpemUgZXZlbnRzLgoiIiIKCmltcG9ydCBzeXMKaW1wb3J0IG9zCmltcG9ydCBwdHkKaW1wb3J0IHNlbGVjdAppbXBvcnQgc2lnbmFsCmltcG9ydCBzdHJ1Y3QKaW1wb3J0IGZjbnRsCmltcG9ydCB0ZXJtaW9zCgojIEdsb2JhbCBmb3IgY2hpbGQgUElECmNoaWxkX3BpZCA9IE5vbmUKbWFzdGVyX2ZkID0gTm9uZQoKCmRlZiBzZXRfc2l6ZShmZCwgY29scywgcm93cyk6CiAgICAiIiJTZXQgdGVybWluYWwgc2l6ZS4iIiIKICAgIHNpemUgPSBzdHJ1Y3QucGFjaygnSEhISCcsIHJvd3MsIGNvbHMsIDAsIDApCiAgICBmY250bC5pb2N0bChmZCwgdGVybWlvcy5USU9DU1dJTlNaLCBzaXplKQoKCmRlZiBoYW5kbGVfcmVzaXplX2VzY2FwZShkYXRhLCBmZCk6CiAgICAiIiIKICAgIENoZWNrIGZvciBhbmQgaGFuZGxlIHJlc2l6ZSBlc2NhcGUgc2VxdWVuY2VzLgogICAgRm9ybWF0OiBceDFiXVJFU0laRTtjb2xzO3Jvd3NceDA3CiAgICBSZXR1cm5zIGRhdGEgd2l0aCByZXNpemUgc2VxdWVuY2VzIHN0cmlwcGVkLgogICAgIiIiCiAgICByZXN1bHQgPSBiJycKICAgIGkgPSAwCiAgICB3aGlsZSBpIDwgbGVuKGRhdGEpOgogICAgICAgICMgQ2hlY2sgZm9yIGVzY2FwZSBzZXF1ZW5jZSBzdGFydAogICAgICAgIGlmIGRhdGFbaTppKzhdID09IGInXHgxYl1SRVNJWkU7JzoKICAgICAgICAgICAgIyBGaW5kIHRoZSBlbmQgb2YgdGhlIHNlcXVlbmNlCiAgICAgICAgICAgIGVuZCA9IGRhdGEuZmluZChiJ1x4MDcnLCBpKQogICAgICAgICAgICBpZiBlbmQgIT0gLTE6CiAgICAgICAgICAgICAgICAjIFBhcnNlIGNvbHMgYW5kIHJvd3MKICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICBwYXJhbXMgPSBkYXRhW2krODplbmRdLmRlY29kZSgndXRmLTgnKQogICAgICAgICAgICAgICAgICAgIGNvbHMsIHJvd3MgPSBwYXJhbXMuc3BsaXQoJzsnKQogICAgICAgICAgICAgICAgICAgIHNldF9zaXplKGZkLCBpbnQoY29scyksIGludChyb3dzKSkKICAgICAgICAgICAgICAgICAgICAjIFNlbmQgU0lHV0lOQ0ggdG8gY2hpbGQKICAgICAgICAgICAgICAgICAgICBpZiBjaGlsZF9waWQ6CiAgICAgICAgICAgICAgICAgICAgICAgIG9zLmtpbGwoY2hpbGRfcGlkLCBzaWduYWwuU0lHV0lOQ0gpCiAgICAgICAgICAgICAgICBleGNlcHQgKFZhbHVlRXJyb3IsIE9TRXJyb3IpIGFzIGU6CiAgICAgICAgICAgICAgICAgICAgc3lzLnN0ZGVyci53cml0ZShmIlJlc2l6ZSBlcnJvcjoge2V9XG4iKQogICAgICAgICAgICAgICAgaSA9IGVuZCArIDEKICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgcmVzdWx0ICs9IGRhdGFbaTppKzFdCiAgICAgICAgaSArPSAxCiAgICByZXR1cm4gcmVzdWx0CgoKZGVmIG1haW4oKToKICAgIGdsb2JhbCBjaGlsZF9waWQsIG1hc3Rlcl9mZAogICAgCiAgICBpZiBsZW4oc3lzLmFyZ3YpIDwgNDoKICAgICAgICBzeXMuc3RkZXJyLndyaXRlKCJVc2FnZTogdGVybWluYWxfcHR5LnB5IDxjb2xzPiA8cm93cz4gPGNvbW1hbmQ+IFthcmdzLi4uXVxuIikKICAgICAgICBzeXMuZXhpdCgxKQogICAgCiAgICBjb2xzID0gaW50KHN5cy5hcmd2WzFdKQogICAgcm93cyA9IGludChzeXMuYXJndlsyXSkKICAgIGNtZCA9IHN5cy5hcmd2WzM6XQogICAgCiAgICAjIEZvcmsgd2l0aCBQVFkKICAgIHBpZCwgZmQgPSBwdHkuZm9yaygpCiAgICAKICAgIGlmIHBpZCA9PSAwOgogICAgICAgICMgQ2hpbGQgcHJvY2VzcwogICAgICAgICMgU2V0IGluaXRpYWwgdGVybWluYWwgc2l6ZQogICAgICAgIHRyeToKICAgICAgICAgICAgc2V0X3NpemUoc3lzLnN0ZG91dC5maWxlbm8oKSwgY29scywgcm93cykKICAgICAgICBleGNlcHQ6CiAgICAgICAgICAgIHBhc3MKICAgICAgICAKICAgICAgICAjIEV4ZWN1dGUgdGhlIGNvbW1hbmQKICAgICAgICBvcy5leGVjdnAoY21kWzBdLCBjbWQpCiAgICBlbHNlOgogICAgICAgICMgUGFyZW50IHByb2Nlc3MKICAgICAgICBjaGlsZF9waWQgPSBwaWQKICAgICAgICBtYXN0ZXJfZmQgPSBmZAogICAgICAgIAogICAgICAgICMgU2V0IGluaXRpYWwgc2l6ZQogICAgICAgIHNldF9zaXplKGZkLCBjb2xzLCByb3dzKQogICAgICAgIAogICAgICAgICMgU2V0IHN0ZGluIHRvIG5vbi1ibG9ja2luZwogICAgICAgIG9sZF9mbGFncyA9IGZjbnRsLmZjbnRsKHN5cy5zdGRpbi5maWxlbm8oKSwgZmNudGwuRl9HRVRGTCkKICAgICAgICBmY250bC5mY250bChzeXMuc3RkaW4uZmlsZW5vKCksIGZjbnRsLkZfU0VURkwsIG9sZF9mbGFncyB8IG9zLk9fTk9OQkxPQ0spCiAgICAgICAgCiAgICAgICAgIyBTZXQgc3Rkb3V0IHRvIGJpbmFyeSBtb2RlIGZvciBwcm9wZXIgb3V0cHV0CiAgICAgICAgc3lzLnN0ZG91dCA9IG9zLmZkb3BlbihzeXMuc3Rkb3V0LmZpbGVubygpLCAnd2InLCBidWZmZXJpbmc9MCkKICAgICAgICBzeXMuc3RkaW4gPSBvcy5mZG9wZW4oc3lzLnN0ZGluLmZpbGVubygpLCAncmInLCBidWZmZXJpbmc9MCkKICAgICAgICAKICAgICAgICB0cnk6CiAgICAgICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgcmxpc3QsIF8sIF8gPSBzZWxlY3Quc2VsZWN0KFtmZCwgc3lzLnN0ZGluXSwgW10sIFtdLCAwLjEpCiAgICAgICAgICAgICAgICBleGNlcHQgc2VsZWN0LmVycm9yOgogICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGlmIGZkIGluIHJsaXN0OgogICAgICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICAgICAgZGF0YSA9IG9zLnJlYWQoZmQsIDQwOTYpCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIG5vdCBkYXRhOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgc3lzLnN0ZG91dC53cml0ZShkYXRhKQogICAgICAgICAgICAgICAgICAgICAgICBzeXMuc3Rkb3V0LmZsdXNoKCkKICAgICAgICAgICAgICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgaWYgc3lzLnN0ZGluIGluIHJsaXN0OgogICAgICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICAgICAgZGF0YSA9IHN5cy5zdGRpbi5yZWFkKDQwOTYpCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGRhdGE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIEhhbmRsZSByZXNpemUgZXNjYXBlIHNlcXVlbmNlcwogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0YSA9IGhhbmRsZV9yZXNpemVfZXNjYXBlKGRhdGEsIGZkKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgZGF0YToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvcy53cml0ZShmZCwgZGF0YSkKICAgICAgICAgICAgICAgICAgICBleGNlcHQgKE9TRXJyb3IsIElPRXJyb3IpOgogICAgICAgICAgICAgICAgICAgICAgICBwYXNzCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICMgQ2hlY2sgaWYgY2hpbGQgaXMgc3RpbGwgYWxpdmUKICAgICAgICAgICAgICAgIHJlc3VsdCA9IG9zLndhaXRwaWQocGlkLCBvcy5XTk9IQU5HKQogICAgICAgICAgICAgICAgaWYgcmVzdWx0WzBdICE9IDA6CiAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAKICAgICAgICBleGNlcHQgS2V5Ym9hcmRJbnRlcnJ1cHQ6CiAgICAgICAgICAgIHBhc3MKICAgICAgICBmaW5hbGx5OgogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICBvcy5jbG9zZShmZCkKICAgICAgICAgICAgZXhjZXB0OgogICAgICAgICAgICAgICAgcGFzcwogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICBvcy5raWxsKHBpZCwgc2lnbmFsLlNJR1RFUk0pCiAgICAgICAgICAgIGV4Y2VwdDoKICAgICAgICAgICAgICAgIHBhc3MKICAgICAgICAgICAgc3lzLmV4aXQoMCkKCgppZiBfX25hbWVfXyA9PSAnX19tYWluX18nOgogICAgbWFpbigpCg==";
 var WIN_PTY_SCRIPT_B64 = "IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiIKV2luZG93cyBQVFkgd3JhcHBlciBmb3IgT3BlbkNvZGUgdGVybWluYWwuClVzZXMgcHl3aW5wdHkgZm9yIENvblBUWSBzdXBwb3J0LgoiIiIKCmltcG9ydCBzeXMKaW1wb3J0IG9zCmltcG9ydCB0aHJlYWRpbmcKaW1wb3J0IHRpbWUKCnRyeToKICAgIGZyb20gd2lucHR5IGltcG9ydCBQdHlQcm9jZXNzCmV4Y2VwdCBJbXBvcnRFcnJvcjoKICAgIHN5cy5zdGRlcnIud3JpdGUoIkVycm9yOiBweXdpbnB0eSBpcyByZXF1aXJlZC4gSW5zdGFsbCB3aXRoOiBwaXAgaW5zdGFsbCBweXdpbnB0eVxuIikKICAgIHN5cy5leGl0KDEpCgoKY2xhc3MgV2luZG93c1BUWToKICAgIGRlZiBfX2luaXRfXyhzZWxmLCBjb2xzLCByb3dzLCBjbWQpOgogICAgICAgIHNlbGYuY29scyA9IGNvbHMKICAgICAgICBzZWxmLnJvd3MgPSByb3dzCiAgICAgICAgc2VsZi5jbWQgPSBjbWQKICAgICAgICBzZWxmLnByb2MgPSBOb25lCiAgICAgICAgc2VsZi5ydW5uaW5nID0gVHJ1ZQogICAgCiAgICBkZWYgc3RhcnQoc2VsZik6CiAgICAgICAgIiIiU3RhcnQgdGhlIFBUWSBwcm9jZXNzLiIiIgogICAgICAgICMgSm9pbiBjb21tYW5kIGZvciB3aW5wdHkKICAgICAgICBpZiBpc2luc3RhbmNlKHNlbGYuY21kLCBsaXN0KToKICAgICAgICAgICAgY21kX3N0ciA9ICcgJy5qb2luKHNlbGYuY21kKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGNtZF9zdHIgPSBzZWxmLmNtZAogICAgICAgIAogICAgICAgIHNlbGYucHJvYyA9IFB0eVByb2Nlc3Muc3Bhd24oCiAgICAgICAgICAgIGNtZF9zdHIsCiAgICAgICAgICAgIGRpbWVuc2lvbnM9KHNlbGYucm93cywgc2VsZi5jb2xzKQogICAgICAgICkKICAgICAgICAKICAgICAgICAjIFN0YXJ0IG91dHB1dCByZWFkZXIgdGhyZWFkCiAgICAgICAgcmVhZGVyX3RocmVhZCA9IHRocmVhZGluZy5UaHJlYWQodGFyZ2V0PXNlbGYucmVhZF9vdXRwdXQsIGRhZW1vbj1UcnVlKQogICAgICAgIHJlYWRlcl90aHJlYWQuc3RhcnQoKQogICAgICAgIAogICAgICAgICMgSGFuZGxlIGlucHV0IGluIG1haW4gdGhyZWFkCiAgICAgICAgc2VsZi5oYW5kbGVfaW5wdXQoKQogICAgCiAgICBkZWYgcmVhZF9vdXRwdXQoc2VsZik6CiAgICAgICAgIiIiUmVhZCBvdXRwdXQgZnJvbSBQVFkgYW5kIHdyaXRlIHRvIHN0ZG91dC4iIiIKICAgICAgICB0cnk6CiAgICAgICAgICAgIHdoaWxlIHNlbGYucnVubmluZyBhbmQgc2VsZi5wcm9jLmlzYWxpdmUoKToKICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICBkYXRhID0gc2VsZi5wcm9jLnJlYWQoNDA5NikKICAgICAgICAgICAgICAgICAgICBpZiBkYXRhOgogICAgICAgICAgICAgICAgICAgICAgICAjIEZpbHRlciBvdXQgZm9jdXMgZXZlbnQgc2VxdWVuY2VzIHRoYXQgZ2V0IGVjaG9lZAogICAgICAgICAgICAgICAgICAgICAgICBkYXRhID0gc2VsZi5maWx0ZXJfZm9jdXNfZXZlbnRzKGRhdGEpCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGRhdGE6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzeXMuc3Rkb3V0LndyaXRlKGRhdGEpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBzeXMuc3Rkb3V0LmZsdXNoKCkKICAgICAgICAgICAgICAgIGV4Y2VwdCBFT0ZFcnJvcjoKICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgICAgICAgICB0aW1lLnNsZWVwKDAuMDEpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICAgICAgcGFzcwogICAgICAgIGZpbmFsbHk6CiAgICAgICAgICAgIHNlbGYucnVubmluZyA9IEZhbHNlCiAgICAKICAgIGRlZiBmaWx0ZXJfZm9jdXNfZXZlbnRzKHNlbGYsIGRhdGEpOgogICAgICAgICIiIkZpbHRlciBvdXQgdGVybWluYWwgZm9jdXMgZXZlbnQgZXNjYXBlIHNlcXVlbmNlcy4iIiIKICAgICAgICAjIFJlbW92ZSBmb2N1cyBpbi9vdXQgc2VxdWVuY2VzCiAgICAgICAgaW1wb3J0IHJlCiAgICAgICAgZGF0YSA9IHJlLnN1YihyJ1x4MWJcW1w/MTAwNFtobF0nLCAnJywgZGF0YSkKICAgICAgICBkYXRhID0gcmUuc3ViKHInXHgxYlxbSScsICcnLCBkYXRhKQogICAgICAgIGRhdGEgPSByZS5zdWIocidceDFiXFtPJywgJycsIGRhdGEpCiAgICAgICAgcmV0dXJuIGRhdGEKICAgIAogICAgZGVmIGhhbmRsZV9pbnB1dChzZWxmKToKICAgICAgICAiIiJIYW5kbGUgaW5wdXQgZnJvbSBzdGRpbi4iIiIKICAgICAgICB0cnk6CiAgICAgICAgICAgIHdoaWxlIHNlbGYucnVubmluZyBhbmQgc2VsZi5wcm9jLmlzYWxpdmUoKToKICAgICAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgICAgICAjIFJlYWQgaW5wdXQgKGJsb2NraW5nKQogICAgICAgICAgICAgICAgICAgIGRhdGEgPSBzeXMuc3RkaW4ucmVhZCgxKQogICAgICAgICAgICAgICAgICAgIGlmIG5vdCBkYXRhOgogICAgICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICMgQ2hlY2sgZm9yIHJlc2l6ZSBlc2NhcGUgc2VxdWVuY2UKICAgICAgICAgICAgICAgICAgICBpZiBkYXRhID09ICdceDFiJzoKICAgICAgICAgICAgICAgICAgICAgICAgIyBCdWZmZXIgcG90ZW50aWFsIGVzY2FwZSBzZXF1ZW5jZQogICAgICAgICAgICAgICAgICAgICAgICBidWZmZXIgPSBkYXRhCiAgICAgICAgICAgICAgICAgICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYyA9IHN5cy5zdGRpbi5yZWFkKDEpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgbm90IGM6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnVmZmVyICs9IGMKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBidWZmZXIuc3RhcnRzd2l0aCgnXHgxYl1SRVNJWkU7Jyk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIGMgPT0gJ1x4MDcnOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIyBQYXJzZSByZXNpemUKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGYuaGFuZGxlX3Jlc2l6ZShidWZmZXIpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBidWZmZXIgPSAnJwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbGlmIGxlbihidWZmZXIpID4gNTA6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgVG9vIGxvbmcsIG5vdCBhIHJlc2l6ZQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVsaWYgbm90ICdceDFiXVJFU0laRTsnLnN0YXJ0c3dpdGgoYnVmZmVyWzpsZW4oJ1x4MWJdUkVTSVpFOycpXSk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgTm90IGEgcmVzaXplIHNlcXVlbmNlCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBleGNlcHQ6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGJ1ZmZlcjoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGYucHJvYy53cml0ZShidWZmZXIpCiAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgc2VsZi5wcm9jLndyaXRlKGRhdGEpCiAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgZXhjZXB0IEVPRkVycm9yOgogICAgICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4wMSkKICAgICAgICBleGNlcHQgRXhjZXB0aW9uOgogICAgICAgICAgICBwYXNzCiAgICAgICAgZmluYWxseToKICAgICAgICAgICAgc2VsZi5ydW5uaW5nID0gRmFsc2UKICAgIAogICAgZGVmIGhhbmRsZV9yZXNpemUoc2VsZiwgZGF0YSk6CiAgICAgICAgIiIiSGFuZGxlIHJlc2l6ZSBlc2NhcGUgc2VxdWVuY2UuIiIiCiAgICAgICAgdHJ5OgogICAgICAgICAgICAjIEZvcm1hdDogXHgxYl1SRVNJWkU7Y29scztyb3dzXHgwNwogICAgICAgICAgICBwYXJhbXMgPSBkYXRhWzg6LTFdICAjIFN0cmlwIFx4MWJdUkVTSVpFOyBhbmQgXHgwNwogICAgICAgICAgICBjb2xzLCByb3dzID0gcGFyYW1zLnNwbGl0KCc7JykKICAgICAgICAgICAgc2VsZi5wcm9jLnNldHdpbnNpemUoaW50KHJvd3MpLCBpbnQoY29scykpCiAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICAgICBzeXMuc3RkZXJyLndyaXRlKGYiUmVzaXplIGVycm9yOiB7ZX1cbiIpCgoKZGVmIG1haW4oKToKICAgIGlmIGxlbihzeXMuYXJndikgPCA0OgogICAgICAgIHN5cy5zdGRlcnIud3JpdGUoIlVzYWdlOiB0ZXJtaW5hbF93aW4ucHkgPGNvbHM+IDxyb3dzPiA8Y29tbWFuZD4gW2FyZ3MuLi5dXG4iKQogICAgICAgIHN5cy5leGl0KDEpCgogICAgY29scyA9IGludChzeXMuYXJndlsxXSkKICAgIHJvd3MgPSBpbnQoc3lzLmFyZ3ZbMl0pCiAgICBjbWQgPSBzeXMuYXJndlszOl0KCiAgICBwdHkgPSBXaW5kb3dzUFRZKGNvbHMsIHJvd3MsIGNtZCkKICAgIHB0eS5zdGFydCgpCiAgICBzeXMuZXhpdCgwKQoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBtYWluKCkK";
-var XTERM_CSS = `/**
- * Copyright (c) 2014 The xterm.js authors. All rights reserved.
- * Copyright (c) 2012-2013, Christopher Jeffrey (MIT License)
- * https://github.com/chjj/term.js
- * @license MIT
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- *
- * Originally forked from (with the author's permission):
- *   Fabrice Bellard's javascript vt100 for jslinux:
- *   http://bellard.org/jslinux/
- *   Copyright (c) 2011 Fabrice Bellard
- *   The original design remains. The terminal itself
- *   has been extended to include xterm CSI codes, among
- *   other features.
- */
-
-/**
- *  Default styles for xterm.js
- */
-
-.xterm {
-    cursor: text;
-    position: relative;
-    user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-}
-
-.xterm.focus,
-.xterm:focus {
-    outline: none;
-}
-
-.xterm .xterm-helpers {
-    position: absolute;
-    top: 0;
-    /**
-     * The z-index of the helpers must be higher than the canvases in order for
-     * IMEs to appear on top.
-     */
-    z-index: 5;
-}
-
-.xterm .xterm-helper-textarea {
-    padding: 0;
-    border: 0;
-    margin: 0;
-    /* Move textarea out of the screen to the far left, so that the cursor is not visible */
-    position: absolute;
-    opacity: 0;
-    left: -9999em;
-    top: 0;
-    width: 0;
-    height: 0;
-    z-index: -5;
-    /** Prevent wrapping so the IME appears against the textarea at the correct position */
-    white-space: nowrap;
-    overflow: hidden;
-    resize: none;
-}
-
-.xterm .composition-view {
-    /* TODO: Composition position got messed up somewhere */
-    background: #000;
-    color: #FFF;
-    display: none;
-    position: absolute;
-    white-space: nowrap;
-    z-index: 1;
-}
-
-.xterm .composition-view.active {
-    display: block;
-}
-
-.xterm .xterm-viewport {
-    /* On OS X this is required in order for the scroll bar to appear fully opaque */
-    background-color: #000;
-    overflow-y: scroll;
-    cursor: default;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.xterm .xterm-screen {
-    position: relative;
-}
-
-.xterm .xterm-screen canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.xterm .xterm-scroll-area {
-    visibility: hidden;
-}
-
-.xterm-char-measure-element {
-    display: inline-block;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: -9999em;
-    line-height: normal;
-}
-
-.xterm.enable-mouse-events {
-    /* When mouse events are enabled (eg. tmux), revert to the standard pointer cursor */
-    cursor: default;
-}
-
-.xterm.xterm-cursor-pointer,
-.xterm .xterm-cursor-pointer {
-    cursor: pointer;
-}
-
-.xterm.column-select.focus {
-    /* Column selection mode */
-    cursor: crosshair;
-}
-
-.xterm .xterm-accessibility:not(.debug),
-.xterm .xterm-message {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
-    color: transparent;
-    pointer-events: none;
-}
-
-.xterm .xterm-accessibility-tree:not(.debug) *::selection {
-  color: transparent;
-}
-
-.xterm .xterm-accessibility-tree {
-  user-select: text;
-  white-space: pre;
-}
-
-.xterm .live-region {
-    position: absolute;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.xterm-dim {
-    /* Dim should not apply to background, so the opacity of the foreground color is applied
-     * explicitly in the generated class and reset to 1 here */
-    opacity: 1 !important;
-}
-
-.xterm-underline-1 { text-decoration: underline; }
-.xterm-underline-2 { text-decoration: double underline; }
-.xterm-underline-3 { text-decoration: wavy underline; }
-.xterm-underline-4 { text-decoration: dotted underline; }
-.xterm-underline-5 { text-decoration: dashed underline; }
-
-.xterm-overline {
-    text-decoration: overline;
-}
-
-.xterm-overline.xterm-underline-1 { text-decoration: overline underline; }
-.xterm-overline.xterm-underline-2 { text-decoration: overline double underline; }
-.xterm-overline.xterm-underline-3 { text-decoration: overline wavy underline; }
-.xterm-overline.xterm-underline-4 { text-decoration: overline dotted underline; }
-.xterm-overline.xterm-underline-5 { text-decoration: overline dashed underline; }
-
-.xterm-strikethrough {
-    text-decoration: line-through;
-}
-
-.xterm-screen .xterm-decoration-container .xterm-decoration {
-	z-index: 6;
-	position: absolute;
-}
-
-.xterm-screen .xterm-decoration-container .xterm-decoration.xterm-decoration-top-layer {
-	z-index: 7;
-}
-
-.xterm-decoration-overview-ruler {
-    z-index: 8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    pointer-events: none;
-}
-
-.xterm-decoration-top {
-    z-index: 2;
-    position: relative;
-}
-`;
 var OpenCodeTerminalView = class extends import_obsidian.ItemView {
   constructor(leaf, plugin) {
     super(leaf);
@@ -7027,24 +6808,14 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
   getIcon() {
     return ICON_NAME;
   }
-  async onOpen() {
-    this.injectCSS();
+  onOpen() {
     this.buildUI();
     this.initTerminal();
     this.startShell();
     this.setupEscapeHandler();
   }
-  async onClose() {
+  onClose() {
     this.dispose();
-  }
-  injectCSS() {
-    const styleId = "opencode-xterm-styles";
-    if (!document.getElementById(styleId)) {
-      const style = document.createElement("style");
-      style.id = styleId;
-      style.textContent = XTERM_CSS;
-      document.head.appendChild(style);
-    }
   }
   buildUI() {
     const container = this.containerEl.children[1];
@@ -7079,8 +6850,8 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
     this.term.loadAddon(this.fitAddon);
     this.term.open(this.termHost);
     this.fitAddon.fit();
-    this.termHost.addEventListener("paste", async (e) => {
-      var _a, _b, _c;
+    this.termHost.addEventListener("paste", (e) => {
+      var _a;
       const items = (_a = e.clipboardData) == null ? void 0 : _a.items;
       if (!items)
         return;
@@ -7090,13 +6861,15 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
           const blob = item.getAsFile();
           if (!blob)
             continue;
-          const buffer = await blob.arrayBuffer();
-          const ext = item.type.split("/")[1] || "png";
-          const tmpPath = path.join(os.tmpdir(), `opencode-paste-${Date.now()}.${ext}`);
-          fs.writeFileSync(tmpPath, Buffer.from(buffer));
-          if ((_c = (_b = this.proc) == null ? void 0 : _b.stdin) == null ? void 0 : _c.writable) {
-            this.proc.stdin.write(`"${tmpPath}"`);
-          }
+          void blob.arrayBuffer().then((buffer) => {
+            var _a2, _b;
+            const ext = item.type.split("/")[1] || "png";
+            const tmpPath = path.join(os.tmpdir(), `opencode-paste-${Date.now()}.${ext}`);
+            fs.writeFileSync(tmpPath, Buffer.from(buffer));
+            if ((_b = (_a2 = this.proc) == null ? void 0 : _a2.stdin) == null ? void 0 : _b.writable) {
+              this.proc.stdin.write(`"${tmpPath}"`);
+            }
+          });
           return;
         }
       }
@@ -7188,7 +6961,8 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
       (_d = this.term) == null ? void 0 : _d.write("\x1B[33mPlease ensure opencode is installed and in your PATH.\x1B[0m\r\n");
       return;
     }
-    const vaultPath = this.app.vault.adapter.basePath;
+    const adapter = this.app.vault.adapter;
+    const vaultPath = adapter instanceof import_obsidian.FileSystemAdapter ? adapter.getBasePath() : ".";
     const proposedDims = (_e = this.fitAddon) == null ? void 0 : _e.proposeDimensions();
     const cols = (proposedDims == null ? void 0 : proposedDims.cols) && !isNaN(proposedDims.cols) ? proposedDims.cols : 80;
     const rows = (proposedDims == null ? void 0 : proposedDims.rows) && !isNaN(proposedDims.rows) ? proposedDims.rows : 24;
@@ -7285,34 +7059,34 @@ var OpenCodeTerminalView = class extends import_obsidian.ItemView {
   }
 };
 var OpenCodePlugin = class extends import_obsidian.Plugin {
-  async onload() {
+  onload() {
     (0, import_obsidian.addIcon)(ICON_NAME, OPENCODE_ICON);
     this.registerView(VIEW_TYPE, (leaf) => new OpenCodeTerminalView(leaf, this));
-    this.addRibbonIcon(ICON_NAME, "New OpenCode Tab", () => {
-      this.openNewTab();
+    this.addRibbonIcon(ICON_NAME, "New OpenCode tab", () => {
+      void this.openNewTab();
     });
     this.addCommand({
       id: "open-opencode",
       name: "Open OpenCode",
       callback: () => {
-        this.openOrFocus();
+        void this.openOrFocus();
       }
     });
     this.addCommand({
       id: "new-opencode-tab",
-      name: "New OpenCode Tab",
+      name: "New OpenCode tab",
       callback: () => {
-        this.openNewTab();
+        void this.openNewTab();
       }
     });
     this.addCommand({
       id: "close-opencode-tab",
-      name: "Close OpenCode Tab",
+      name: "Close OpenCode tab",
       checkCallback: (checking) => {
-        const leaf = this.app.workspace.activeLeaf;
-        if ((leaf == null ? void 0 : leaf.view) instanceof OpenCodeTerminalView) {
+        const view = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
+        if (view) {
           if (!checking) {
-            leaf.detach();
+            view.leaf.detach();
           }
           return true;
         }
@@ -7321,14 +7095,13 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
     });
     this.addCommand({
       id: "toggle-focus-editor-opencode",
-      name: "Toggle Focus: Editor <-> OpenCode",
+      name: "Toggle focus: Editor <-> OpenCode",
       callback: () => {
-        this.toggleFocus();
+        void this.toggleFocus();
       }
     });
   }
-  async onunload() {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE);
+  onunload() {
   }
   async openOrFocus() {
     const existing = this.app.workspace.getLeavesOfType(VIEW_TYPE);
@@ -7353,8 +7126,8 @@ var OpenCodePlugin = class extends import_obsidian.Plugin {
     }
   }
   toggleFocus() {
-    const activeLeaf = this.app.workspace.activeLeaf;
-    if ((activeLeaf == null ? void 0 : activeLeaf.view) instanceof OpenCodeTerminalView) {
+    const activeView = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
+    if (activeView) {
       const editorLeaves = this.app.workspace.getLeavesOfType("markdown");
       if (editorLeaves.length > 0) {
         this.app.workspace.setActiveLeaf(editorLeaves[0], { focus: true });

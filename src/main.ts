@@ -1,4 +1,4 @@
-import { Plugin, ItemView, WorkspaceLeaf, Scope, addIcon } from 'obsidian';
+import { Plugin, ItemView, WorkspaceLeaf, Scope, addIcon, FileSystemAdapter } from 'obsidian';
 import { Terminal } from '@xterm/xterm';
 import { FitAddon } from '@xterm/addon-fit';
 import { spawn, ChildProcess } from 'child_process';
@@ -17,10 +17,6 @@ const OPENCODE_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 
 // These will be replaced by the build script with base64-encoded Python scripts
 const PTY_SCRIPT_B64 = "__PTY_SCRIPT_B64__";
 const WIN_PTY_SCRIPT_B64 = "__WIN_PTY_SCRIPT_B64__";
-
-// xterm.js CSS - placeholder replaced by esbuild define
-declare const __XTERM_CSS__: string;
-const XTERM_CSS = __XTERM_CSS__;
 
 class OpenCodeTerminalView extends ItemView {
     private term: Terminal | null = null;
@@ -49,26 +45,15 @@ class OpenCodeTerminalView extends ItemView {
         return ICON_NAME;
     }
 
-    async onOpen(): Promise<void> {
-        this.injectCSS();
+    onOpen(): void {
         this.buildUI();
         this.initTerminal();
         this.startShell();
         this.setupEscapeHandler();
     }
 
-    async onClose(): Promise<void> {
+    onClose(): void {
         this.dispose();
-    }
-
-    private injectCSS(): void {
-        const styleId = 'opencode-xterm-styles';
-        if (!document.getElementById(styleId)) {
-            const style = document.createElement('style');
-            style.id = styleId;
-            style.textContent = XTERM_CSS;
-            document.head.appendChild(style);
-        }
     }
 
     private buildUI(): void {
@@ -111,7 +96,7 @@ class OpenCodeTerminalView extends ItemView {
         this.fitAddon.fit();
 
         // Handle paste events with images
-        this.termHost.addEventListener('paste', async (e: ClipboardEvent) => {
+        this.termHost.addEventListener('paste', (e: ClipboardEvent) => {
             const items = e.clipboardData?.items;
             if (!items) return;
 
@@ -121,14 +106,15 @@ class OpenCodeTerminalView extends ItemView {
                     const blob = item.getAsFile();
                     if (!blob) continue;
 
-                    const buffer = await blob.arrayBuffer();
-                    const ext = item.type.split('/')[1] || 'png';
-                    const tmpPath = path.join(os.tmpdir(), `opencode-paste-${Date.now()}.${ext}`);
-                    fs.writeFileSync(tmpPath, Buffer.from(buffer));
+                    void blob.arrayBuffer().then((buffer) => {
+                        const ext = item.type.split('/')[1] || 'png';
+                        const tmpPath = path.join(os.tmpdir(), `opencode-paste-${Date.now()}.${ext}`);
+                        fs.writeFileSync(tmpPath, Buffer.from(buffer));
 
-                    if (this.proc?.stdin?.writable) {
-                        this.proc.stdin.write(`"${tmpPath}"`);
-                    }
+                        if (this.proc?.stdin?.writable) {
+                            this.proc.stdin.write(`"${tmpPath}"`);
+                        }
+                    });
                     return;
                 }
             }
@@ -240,7 +226,8 @@ class OpenCodeTerminalView extends ItemView {
         }
 
         // Get vault path as working directory
-        const vaultPath = (this.app.vault.adapter as any).basePath;
+        const adapter = this.app.vault.adapter;
+        const vaultPath = adapter instanceof FileSystemAdapter ? adapter.getBasePath() : '.';
         
         // Get initial terminal dimensions (with fallback for NaN values)
         const proposedDims = this.fitAddon?.proposeDimensions();
@@ -348,7 +335,7 @@ class OpenCodeTerminalView extends ItemView {
 }
 
 export default class OpenCodePlugin extends Plugin {
-    async onload(): Promise<void> {
+    onload(): void {
         // Register custom icon
         addIcon(ICON_NAME, OPENCODE_ICON);
 
@@ -356,8 +343,8 @@ export default class OpenCodePlugin extends Plugin {
         this.registerView(VIEW_TYPE, (leaf) => new OpenCodeTerminalView(leaf, this));
 
         // Add ribbon icon
-        this.addRibbonIcon(ICON_NAME, 'New OpenCode Tab', () => {
-            this.openNewTab();
+        this.addRibbonIcon(ICON_NAME, 'New OpenCode tab', () => {
+            void this.openNewTab();
         });
 
         // Register commands
@@ -365,26 +352,26 @@ export default class OpenCodePlugin extends Plugin {
             id: 'open-opencode',
             name: 'Open OpenCode',
             callback: () => {
-                this.openOrFocus();
+                void this.openOrFocus();
             }
         });
 
         this.addCommand({
             id: 'new-opencode-tab',
-            name: 'New OpenCode Tab',
+            name: 'New OpenCode tab',
             callback: () => {
-                this.openNewTab();
+                void this.openNewTab();
             }
         });
 
         this.addCommand({
             id: 'close-opencode-tab',
-            name: 'Close OpenCode Tab',
+            name: 'Close OpenCode tab',
             checkCallback: (checking: boolean) => {
-                const leaf = this.app.workspace.activeLeaf;
-                if (leaf?.view instanceof OpenCodeTerminalView) {
+                const view = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
+                if (view) {
                     if (!checking) {
-                        leaf.detach();
+                        view.leaf.detach();
                     }
                     return true;
                 }
@@ -394,16 +381,15 @@ export default class OpenCodePlugin extends Plugin {
 
         this.addCommand({
             id: 'toggle-focus-editor-opencode',
-            name: 'Toggle Focus: Editor <-> OpenCode',
+            name: 'Toggle focus: Editor <-> OpenCode',
             callback: () => {
-                this.toggleFocus();
+                void this.toggleFocus();
             }
         });
     }
 
-    async onunload(): Promise<void> {
-        // Close all OpenCode views
-        this.app.workspace.detachLeavesOfType(VIEW_TYPE);
+    onunload(): void {
+        // Views are automatically cleaned up by Obsidian
     }
 
     private async openOrFocus(): Promise<void> {
@@ -434,9 +420,9 @@ export default class OpenCodePlugin extends Plugin {
     }
 
     private toggleFocus(): void {
-        const activeLeaf = this.app.workspace.activeLeaf;
-        
-        if (activeLeaf?.view instanceof OpenCodeTerminalView) {
+        const activeView = this.app.workspace.getActiveViewOfType(OpenCodeTerminalView);
+
+        if (activeView) {
             // Currently in OpenCode, switch to editor
             const editorLeaves = this.app.workspace.getLeavesOfType('markdown');
             if (editorLeaves.length > 0) {
